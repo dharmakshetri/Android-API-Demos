@@ -29,7 +29,7 @@ public class StackOverFlowActivity extends BaseActivity  {
     @BindView(R.id.emptyTextView)
     TextView emptyTextView;
 
-    //@BindView(R.id.recyclerView)
+    @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
 
     List<StackOverFlowUser> myDataSource= new ArrayList<>();

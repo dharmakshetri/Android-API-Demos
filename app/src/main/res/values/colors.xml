@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--https://material.google.com/style/color.html#color-color-palette -->
+    <color name="gray_300">#E0E0E0</color>
+    <color name="black_70">#b2000000</color>
+    <color name="gray_500">#9E9E9E</color>
 </resources>

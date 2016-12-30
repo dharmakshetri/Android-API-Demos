@@ -13,9 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:textSize="12sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:text="StackOverFlow Data" />
+        android:text="@string/stackoverflow" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

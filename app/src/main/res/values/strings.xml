@@ -5,7 +5,13 @@
     <string name="desc">(Using Retrofit, Butter Knife)</string>
     <string name="loading">Loading</string>
     <string name="empty_string">No data found !</string>
+    <string name="username">Username</string>
     <!-- Apis-->
     <string name="stackoverflow">StackOverFlow</string>
     <string name="reputation">Reputation</string>
+
+    <string name="github">GitHub</string>
+    <string name="repo">Repository</string>
+    <string name="fetch">Fetch Repo</string>
+    <string name="no_description_found">No Desciption Found</string>
 </resources>

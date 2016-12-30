@@ -21,13 +21,33 @@
         <!-- A child of the StackOverFlowActivity -->
         <activity
             android:name=".activity.StackOverFlowActivity"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity">
+
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
 
+        <activity
+            android:name=".activity.GitHubActivity"
+            android:parentActivityName=".activity.MainActivity">
+
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.GitHubDetailsActivity"
+            android:parentActivityName=".activity.MainActivity">
+
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.GitHubActivity" />
+        </activity>
     </application>
 
 </manifest>

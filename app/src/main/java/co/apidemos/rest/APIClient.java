@@ -12,7 +12,11 @@ public class APIClient {
 
     public static  final  String STACKOVERFLOW_BASE_URL="https://api.stackexchange.com" ;
 
+    public static final String GITHUB_BASE_URL="https://api.github.com";
+
     public static Retrofit retrofit=null;
+
+    public static Retrofit retrofitGitHub=null;
 
     // get stackoverflow client
     public static  Retrofit getStackOverFLowClient(){
@@ -23,5 +27,17 @@ public class APIClient {
                     .build();
         }
         return  retrofit;
+    }
+
+    //get github client
+
+    public static  Retrofit getGitHubClient(){
+        if(retrofitGitHub == null){
+            retrofitGitHub=new Retrofit.Builder()
+                    .baseUrl(GITHUB_BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return  retrofitGitHub;
     }
 }

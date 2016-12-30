@@ -25,11 +25,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
        // linearLayoutStackOverFlow=(LinearLayout) findViewById(R.id.)
     }
-
+    // stackoverflow onclick
     public void onClickStackOverFlow(View view){
 
         Intent intentStackOverFlow= new Intent(MainActivity.this, StackOverFlowActivity.class);
         startActivity(intentStackOverFlow);
+    }
+
+    // github onclick
+    public void onClickGitHub(View view){
+
+        Intent intentGitHub= new Intent(MainActivity.this, GitHubActivity.class);
+        startActivity(intentGitHub);
     }
 
 }
