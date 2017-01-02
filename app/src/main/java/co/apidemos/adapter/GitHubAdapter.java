@@ -6,13 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import co.apidemos.R;
-import co.apidemos.model.GitHubData;
+import co.apidemos.model.github.GitHubData;
 
 /**
  * Created by horror on 12/29/16.
@@ -64,13 +65,21 @@ public class GitHubAdapter extends RecyclerView.Adapter<GitHubAdapter.GitHubUser
     @Override
     public void onBindViewHolder(GitHubUserViewHolder holder, int position) {
 
-        holder.tvGitHubRepoName.setText(repoData.get(position).getName() +" ("+ repoData.get(position).getLanguage()+" )");
+        final GitHubData gitHub=repoData.get(position);
+        holder.tvGitHubRepoName.setText(gitHub.getName() +" ("+ gitHub.getLanguage()+" )");
 
-        String description=repoData.get(position).getDescription();
+        String description=gitHub.getDescription();
         /*if(description.equals(null) || description==null){
             description=getContext().getResources().getString(R.string.no_description_found);
         }*/
         holder.tvGitHubRepoDescription.setText(description);
+
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, " Show details of "+gitHub.getName(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
@@ -81,15 +90,17 @@ public class GitHubAdapter extends RecyclerView.Adapter<GitHubAdapter.GitHubUser
     public  class GitHubUserViewHolder extends RecyclerView.ViewHolder{
 
         @BindView(R.id.tvGitHubReposName)
-        TextView tvGitHubRepoName;
+         TextView tvGitHubRepoName;
 
         @BindView(R.id.tvGitHubRepoDescription)
-        TextView tvGitHubRepoDescription;
+         TextView tvGitHubRepoDescription;
 
+         View view;
 
         public GitHubUserViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+            view=itemView;
         }
     }
 }

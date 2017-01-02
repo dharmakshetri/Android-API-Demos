@@ -1,4 +1,4 @@
-package co.apidemos.model;
+package co.apidemos.model.stackoverflow;
 
 import com.google.gson.annotations.SerializedName;
 

@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/imageViewAvatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/profile_image_width_height"
+        android:layout_height="@dimen/profile_image_width_height"
         android:layout_alignParentLeft="true"/>
 
     <TextView
@@ -53,7 +53,7 @@
         android:layout_below="@+id/tvGitHubFollowers"/>
 
     <android.support.v7.widget.RecyclerView
-        android:layout_below="@+id/tvGitHubFollowing"
+        android:layout_below="@+id/imageViewAvatar"
         android:layout_marginTop="8dp"
         android:padding="16dp"
         android:background="@color/gray_300"

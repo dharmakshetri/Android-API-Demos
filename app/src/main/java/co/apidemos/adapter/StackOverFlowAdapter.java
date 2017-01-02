@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 import co.apidemos.R;
-import co.apidemos.model.StackOverFlowUser;
+import co.apidemos.model.stackoverflow.StackOverFlowUser;
 
 /**
  * Created by horror on 12/27/16.

@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 25
     buildToolsVersion "24.0.1"
@@ -26,13 +25,26 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
+
+    // Gson and Retrofit
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //Recyclerview
     compile 'com.android.support:recyclerview-v7:25.1.0'
 
+    // butter knife
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 
+    //picasoo image loader
     compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //http logging
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+
+    //injection
+    compile 'com.google.dagger:dagger:2.4'
+    annotationProcessor "com.google.dagger:dagger-compiler:2.4"
 }

@@ -14,6 +14,9 @@ public class APIClient {
 
     public static final String GITHUB_BASE_URL="https://api.github.com";
 
+    public final String BASE_URL = "https://api.twitch.tv/kraken/";
+
+
     public static Retrofit retrofit=null;
 
     public static Retrofit retrofitGitHub=null;
@@ -40,4 +43,8 @@ public class APIClient {
         }
         return  retrofitGitHub;
     }
+
+    // get twitch client
+
+
 }
