@@ -14,4 +14,9 @@
     <string name="repo">Repository</string>
     <string name="fetch">Fetch Repo</string>
     <string name="no_description_found">No Desciption Found</string>
+
+    <!--Instagram !-->
+    <string name="instagram">Instagram</string>
+    <string name="followed_by">Followed By</string>
+    <string name="followers">Followers</string>
 </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_instragram"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="co.apidemos.activity.InstragramActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAvatarInstagram"
+        android:layout_width="@dimen/instragram_profile_image_width_height"
+        android:layout_height="@dimen/instragram_profile_image_width_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tvInstagramUserName"
+        style="@style/textviewRepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/imageViewAvatarInstagram" />
+
+    <TextView
+        android:id="@+id/tvInstagramFullname"
+        style="@style/textviewRepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInstagramUserName"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/tvInstagramBio"
+        style="@style/textviewRepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/tvInstagramFullname" />
+
+    <TextView
+        android:id="@+id/tvInstagramMedia"
+        style="@style/textviewRepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:visibility="gone"
+        android:layout_below="@+id/tvInstagramBio" />
+    <TextView
+        android:id="@+id/tvInstagramFollowedBy"
+        style="@style/textviewRepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/tvInstagramMedia" />
+
+    <TextView
+        android:id="@+id/tvInstagramFollows"
+        style="@style/textviewRepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInstagramFollowedBy"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         />
+</RelativeLayout>

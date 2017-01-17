@@ -4,4 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="profile_image_width_height">125dp</dimen>
+    <dimen name="instragram_profile_image_width_height">300dp</dimen>
 </resources>

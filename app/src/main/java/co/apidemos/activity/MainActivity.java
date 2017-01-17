@@ -36,4 +36,10 @@ public class MainActivity extends BaseActivity {
         startActivity(intentGitHub);
     }
 
+    //instagram click
+    public void onClickInstagram(View view){
+        Intent iInstagram= new Intent(MainActivity.this, InstragramActivity.class);
+        startActivity(iInstagram);
+    }
+
 }

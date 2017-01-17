@@ -4,6 +4,7 @@ import java.util.List;
 
 import co.apidemos.model.github.GitHubData;
 import co.apidemos.model.github.GitHubUser;
+import co.apidemos.model.instagram.InstagramUser;
 import co.apidemos.model.stackoverflow.StackOverFlowData;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -31,4 +32,9 @@ public interface UserEndPoints {
     //twitch
    // @GET("games/top")
     //Call<Twitch> getTopGames(@Header("Client-Id") String clientId);
+
+    //instagram
+    @GET("/v1/users/self/")
+    //Call<InstagramUser> getInstagramUser(@Query("authtoken") String authtoken);
+    Call<InstagramUser> getInstagramUser(@Query("access_token") String authtoken);
 }
