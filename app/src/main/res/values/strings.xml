@@ -19,4 +19,7 @@
     <string name="instagram">Instagram</string>
     <string name="followed_by">Followed By</string>
     <string name="followers">Followers</string>
+
+    <!--IPAddress -->
+    <string name="ip">IP Address</string>
 </resources>

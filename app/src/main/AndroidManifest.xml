@@ -46,13 +46,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.GitHubActivity" />
         </activity>
-        <activity android:name=".activity.InstragramActivity" android:parentActivityName=".activity.MainActivity">
+        <activity
+            android:name=".activity.InstragramActivity"
+            android:parentActivityName=".activity.MainActivity">
+
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
-
         </activity>
+        <activity android:name=".activity.IPDetailsActivity"></activity>
     </application>
 
 </manifest>

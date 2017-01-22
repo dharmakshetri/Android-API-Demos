@@ -18,12 +18,16 @@ public class APIClient {
     // create via https://api.instagram.com by passing client id
     public static final String INSTAGRAM_AUTH_TOKEN="1617125211.ec895f1.d0d214a15e234c38a30e2c35cbab9968";
 
+    public static final String IP_BASE_URL="http://www.ip-api.com";
+
 
     public static Retrofit retrofit=null;
 
     public static Retrofit retrofitGitHub=null;
 
     public static Retrofit retrofitInstragram=null;
+
+    public static Retrofit retrofitIP=null;
 
     // get stackoverflow client
     public static  Retrofit getStackOverFLowClient(){
@@ -57,6 +61,17 @@ public class APIClient {
                     .build();
         }
         return  retrofitInstragram;
+    }
+
+    // get instagram client
+    public static  Retrofit getIPClient(){
+        if(retrofitIP == null){
+            retrofitIP=new Retrofit.Builder()
+                    .baseUrl(IP_BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return  retrofitIP;
     }
 
 

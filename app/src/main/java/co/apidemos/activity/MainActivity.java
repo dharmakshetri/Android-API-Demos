@@ -42,4 +42,12 @@ public class MainActivity extends BaseActivity {
         startActivity(iInstagram);
     }
 
+    //ip address click
+    //instagram click
+    public void onClickIP(View view){
+        Intent iIP= new Intent(MainActivity.this, IPDetailsActivity.class);
+        startActivity(iIP);
+    }
+
+
 }
