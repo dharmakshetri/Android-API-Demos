@@ -55,7 +55,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.IPDetailsActivity"></activity>
+        <activity android:name=".activity.IPDetailsActivity"
+            android:parentActivityName=".activity.MainActivity">
+
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

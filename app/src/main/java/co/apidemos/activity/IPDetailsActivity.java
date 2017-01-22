@@ -25,6 +25,7 @@ public class IPDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ipdetails);
 
         ButterKnife.bind(this);
+        setTitle(getResources().getString(R.string.ip_details));
 
         loadIPDetails();
     }

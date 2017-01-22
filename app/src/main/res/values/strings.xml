@@ -22,4 +22,5 @@
 
     <!--IPAddress -->
     <string name="ip">IP Address</string>
+    <string name="ip_details">IP Address Details</string>
 </resources>
