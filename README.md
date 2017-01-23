@@ -4,7 +4,7 @@ Using [Retrofit](https://square.github.io/retrofit/) , [Butterknife](http://jake
 
 
 #These API includes for this repository.
-![Menu](https://raw.githubusercontent.com/dharmakshetri/Android-API-Demos/master/device-2017-01-23-145523.png)
+<img src="https://raw.githubusercontent.com/dharmakshetri/Android-API-Demos/master/device-2017-01-23-145523.png" alt="menu" width="250" height="350">
 
 
 # API
