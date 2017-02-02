@@ -49,5 +49,11 @@ public class MainActivity extends BaseActivity {
         startActivity(iIP);
     }
 
+    //weather click
+    public void onClickWeather(View view){
+        Intent iWeather= new Intent(MainActivity.this, WeatherActivity.class);
+        startActivity(iWeather);
+    }
+
 
 }

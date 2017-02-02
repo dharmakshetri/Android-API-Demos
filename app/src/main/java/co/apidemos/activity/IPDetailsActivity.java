@@ -26,6 +26,7 @@ public class IPDetailsActivity extends BaseActivity implements OnMapReadyCallbac
 
     @BindView(R.id.tvIPDetails)
     TextView tvIPDetails;
+
     private GoogleMap mMap;
 
     private double latitude;

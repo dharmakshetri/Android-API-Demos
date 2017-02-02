@@ -20,6 +20,10 @@ public class APIClient {
 
     public static final String IP_BASE_URL="http://www.ip-api.com";
 
+    //weather base url
+    public static final String WEATHER_BASE_URL="http://api.openweathermap.org/data/2.5/";
+    public static final String WEATHER_API_KEY="e97ba4a2ce926a26e7d09676aaa2786e";
+
 
     public static Retrofit retrofit=null;
 
@@ -28,6 +32,8 @@ public class APIClient {
     public static Retrofit retrofitInstragram=null;
 
     public static Retrofit retrofitIP=null;
+
+    public static Retrofit retrofitWeather=null;
 
     // get stackoverflow client
     public static  Retrofit getStackOverFLowClient(){
@@ -72,6 +78,17 @@ public class APIClient {
                     .build();
         }
         return  retrofitIP;
+    }
+
+    // weather retrofit client
+    public static  Retrofit getWeatherClient(){
+        if(retrofitWeather == null){
+            retrofitWeather=new Retrofit.Builder()
+                    .baseUrl(WEATHER_BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return  retrofitWeather;
     }
 
 

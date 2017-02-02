@@ -24,4 +24,8 @@
     <string name="ip">IP Address</string>
     <string name="ip_details">IP Address Details</string>
     <string name="title_activity_maps">Map</string>
+
+    <!--Weather !-->
+    <string name="weather">Weather</string>
+    <string name="city">city</string>
 </resources>

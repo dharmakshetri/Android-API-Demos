@@ -7,6 +7,7 @@ import co.apidemos.model.github.GitHubUser;
 import co.apidemos.model.instagram.InstagramUser;
 import co.apidemos.model.ip.IPData;
 import co.apidemos.model.stackoverflow.StackOverFlowData;
+import co.apidemos.model.weather.Weather;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -41,4 +42,10 @@ public interface UserEndPoints {
     //ip
     @GET("/json")
     Call<IPData> getIpDetails();
+
+    //weather
+    @GET("weather")
+    //Call<WeatherData> getWeatherData(@Query("q") String city);
+    Call<Weather> getWeatherData(@Query("q") String q, @Query("appid") String appid);
+
 }
