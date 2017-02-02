@@ -12,6 +12,7 @@ Using [Retrofit](https://square.github.io/retrofit/) , [Butterknife](http://jake
 2. [GitHub](https://api.github.com)
 3. [Instragram](https://api.instragram.com)
 4. IP API
+5. [Weather API](http://openweathermap.org/api)
 
 More api  updating soon....
 
