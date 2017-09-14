@@ -1,5 +1,5 @@
 # Android-API-Demos
-Public api data display on android application
+Most useful public api data display on android application
 Using [Retrofit](https://square.github.io/retrofit/) , [Butterknife](http://jakewharton.github.io/butterknife/)
 
 
